@@ -119,3 +119,9 @@ function draw(){
 	window.requestAnimationFrame(draw);
 }
 draw();
+// enables playback as well as creates a makes it works on autoplay with a duration of 5 seconds
+var pixii = document.getElementById('pixi');
+
+setInterval(() => {
+  pixii.click()
+}, 5000)
