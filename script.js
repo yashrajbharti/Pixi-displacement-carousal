@@ -11,10 +11,10 @@ tl
   .call(function(){
     running = 0;
 
-    img7 = [img6, img6 = img7][0];
-    img6 = [img5, img5 = img6][0];
-    img5 = [img4, img4 = img5][0];
-    img4 = [img3, img3 = img4][0];
+    // img7 = [img6, img6 = img7][0];
+    // img6 = [img5, img5 = img6][0];
+    // img5 = [img4, img4 = img5][0];
+    // img4 = [img3, img3 = img4][0];
     img3 = [img2, img2 = img3][0];
     img2 = [img1, img1 = img2][0];
   });
@@ -24,18 +24,18 @@ tl
   tl
     .to(img3, 1, {alpha: 1},1)
     .to(img2,0.9,{alpha: 0},1.1)
-  tl
-    .to(img4, 1, {alpha: 1},1)
-    .to(img3,0.9,{alpha: 0},1.1)
-  tl
-    .to(img5, 1, {alpha: 1},1)
-    .to(img4,0.9,{alpha: 0},1.1)
-  tl
-    .to(img6, 1, {alpha: 1},1)
-    .to(img5,0.9,{alpha: 0},1.1)
-  tl
-    .to(img7, 1, {alpha: 1},1)
-    .to(img6,0.9,{alpha: 0},1.1)
+  // tl
+  //   .to(img4, 1, {alpha: 1},1)
+  //   .to(img3,0.9,{alpha: 0},1.1)
+  // tl
+  //   .to(img5, 1, {alpha: 1},1)
+  //   .to(img4,0.9,{alpha: 0},1.1)
+  // tl
+  //   .to(img6, 1, {alpha: 1},1)
+  //   .to(img5,0.9,{alpha: 0},1.1)
+  // tl
+  //   .to(img7, 1, {alpha: 1},1) // this one 
+  //   .to(img6,0.9,{alpha: 0},1.1)
 
 	tl
 		.fromTo(img3.scale, 1,
@@ -90,20 +90,20 @@ var img5 = PIXI.Sprite.fromImage('b.jpg');
 	img5.position.y = 50;
 	img5.alpha = 0;
 	container.addChild(img5);
-var img6 = PIXI.Sprite.fromImage('c.jpg');
-  img6.width = 650;
-  img6.height = 500;
-  img6.position.x = 75;
-  img6.position.y = 50;
-  img6.alpha = 0;
-  container.addChild(img6);
-var img7 = PIXI.Sprite.fromImage('d.jpg');
-  img7.width = 650;
-  img7.height = 500;
-  img7.position.x = 75;
-  img7.position.y = 50;
-  img7.alpha = 0;
-  container.addChild(img7);
+// var img6 = PIXI.Sprite.fromImage('c.jpg');
+//   img6.width = 650;
+//   img6.height = 500;
+//   img6.position.x = 75;
+//   img6.position.y = 50;
+//   img6.alpha = 0;
+//   container.addChild(img6);
+// var img7 = PIXI.Sprite.fromImage('d.jpg');
+//   img7.width = 650;
+//   img7.height = 500;
+//   img7.position.x = 75;
+//   img7.position.y = 50;
+//   img7.alpha = 0;
+//   container.addChild(img7);
 
 // add Filters
 var disSprite = PIXI.Sprite.fromImage('k.jpg');
@@ -125,3 +125,5 @@ var pixii = document.getElementById('pixi');
 setInterval(() => {
   pixii.click()
 }, 5000)
+
+
